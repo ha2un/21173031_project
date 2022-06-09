@@ -38,7 +38,7 @@
                         android:layout_marginTop="1dp"
                         android:gravity="left"
                         android:paddingLeft="10dp"
-                        android:text="상영시작일"
+                        android:text="영화 개봉일"
                         android:textColor="#1C1C1C"
                         android:textSize="10sp" />
 
@@ -91,7 +91,7 @@
                                         android:layout_height="wrap_content"
                                         android:gravity="left"
                                         android:paddingRight="1dp"
-                                        android:text="순위"
+                                        android:text="박스오피스 순위"
                                         android:textColor="#1C1C1C"
                                         android:textSize="11sp" />
 
