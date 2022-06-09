@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:cardBackgroundColor="#FFFFFFFF"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/openDt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="상영시작일"
+                        android:textColor="#1C1C1C"
+                        android:textSize="10sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/movie"/>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/MovieName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="left"
+                                        android:paddingRight="1dp"
+                                        android:text="제목"
+                                        android:textColor="#000000"
+                                        android:textSize="15sp"/>
+
+
+                                    <TextView
+                                        android:id="@+id/rank"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="left"
+                                        android:paddingRight="1dp"
+                                        android:text="순위"
+                                        android:textColor="#1C1C1C"
+                                        android:textSize="11sp" />
+
+
+                                    <TextView
+                                        android:id="@+id/peopleCount"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:paddingRight="3dp"
+                                        android:gravity="left"
+                                        android:text="관객 수"
+                                        android:textColor="#1C1C1C"
+                                        android:textSize="9sp"/>
+
+                                    <TextView
+                                        android:id="@+id/showCount"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:paddingRight="3dp"
+                                        android:gravity="left"
+                                        android:text="상영 수"
+                                        android:textColor="#1C1C1C"
+                                        android:textSize="9sp"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp" />
+
+
+</LinearLayout>
